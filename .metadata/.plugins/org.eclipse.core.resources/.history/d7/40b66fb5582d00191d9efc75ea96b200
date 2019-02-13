@@ -1,0 +1,77 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 6, 2019
+ *      Author: Ahmed Elsaka
+ */
+#include "STD_TYPES.h"
+#include "DIO_interface.h"
+#include "LED_interface.h"
+#include <util/delay.h>
+#include "DIO_interface.h"
+int main(void){
+
+	// set direction
+	DIO_voidInit();
+
+	while(1){
+		DIO_u8SetPortnValue(0,0b01111110);   //row
+		DIO_u8SetPortnValue(3,0b11111110);   //col
+
+		DIO_u8SetPortnValue(0,0b01011010);   //row
+		DIO_u8SetPortnValue(3,0b11111101);   //col
+
+		DIO_u8SetPortnValue(0,0b01000010);   //row
+		DIO_u8SetPortnValue(3,0b11111011);   //col
+
+		DIO_u8SetPortnValue(0,0b01111110);   //row
+		DIO_u8SetPortnValue(3,0b11110111);   //col
+
+
+		DIO_u8SetPortnValue(0,0b00111100);   //row
+		DIO_u8SetPortnValue(3,0b11101111);   //col
+
+		DIO_u8SetPortnValue(0,0b01011010);   //row
+		DIO_u8SetPortnValue(3,0b11011111);   //col
+
+		DIO_u8SetPortnValue(0,0b10011001);   //row
+		DIO_u8SetPortnValue(3,0b10111111);   //col
+
+		DIO_u8SetPortnValue(0,0b00100100);   //row
+		DIO_u8SetPortnValue(3,0b01111111);   //col
+		_delay_ms(1000);
+
+
+		DIO_u8SetPortnValue(1,0b01001001);   //row
+		DIO_u8SetPortnValue(3,0b11111110);   //col
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b00101010);   //row
+		DIO_u8SetPortnValue(3,0b11111101);   //col
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b00011100);   //row
+		DIO_u8SetPortnValue(3,0b11111011);   //col
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b00100010);   //row
+		DIO_u8SetPortnValue(3,0b11110111);   //col
+
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b01000001);   //row
+		DIO_u8SetPortnValue(3,0b11101111);   //col
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b01111111);   //row
+		DIO_u8SetPortnValue(3,0b11011111);   //col
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b00100010);   //row
+		DIO_u8SetPortnValue(3,0b10111111);   //col
+		_delay_ms(2);
+		DIO_u8SetPortnValue(1,0b00100010);   //row
+		DIO_u8SetPortnValue(3,0b01111111);   //col
+		_delay_ms(2);
+
+
+
+	}
+
+	return 0 ;
+}
+

@@ -1,0 +1,19 @@
+/*
+ * SWI_private.h
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Killua
+ */
+
+#ifndef SWI_PRIVATE_H_
+#define SWI_PRIVATE_H_
+
+
+#define SWI_u8_PULL_UP    (u8)1
+#define SWI_u8_PULL_DOWN  (u8)0
+#define  ARRAY_START_INDEX (u8)1
+
+#define SWI_PRESSED    (u8)1
+#define SWI_RELEASED    (u8)0
+
+#endif /* SWI_PRIVATE_H_ */

@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 6, 2019
+ *      Author: Ahmed Elsaka
+ */
+#include "STD_TYPES.h"
+#include "DIO_interface.h"
+#include "LED_interface.h"
+#include <util/delay.h>
+#include "DIO_interface.h"
+int main(void){
+
+	// set direction
+	DIO_voidInit();
+
+	while(1){
+		DIO_u8SetPortnValue(0,0b11111110);   row
+		DIO_u8SetPortnValue(3,0b11111111);   //col
+		_delay_ms(2);
+
+
+
+	}
+
+	return 0 ;
+}
+

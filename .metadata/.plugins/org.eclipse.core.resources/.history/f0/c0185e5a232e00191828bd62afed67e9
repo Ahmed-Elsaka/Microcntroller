@@ -1,0 +1,24 @@
+/*
+ * LMD_private.h
+ *
+ *  Created on: Feb 11, 2019
+ *      Author: Killua
+ */
+
+#ifndef LMD_PRIVATE_H_
+#define LMD_PRIVATE_H_
+
+
+#define LMD_PORTA (u8)0
+#define LMD_PORTB (U8)1
+#define LMD_PORtC (u8)2
+#define LMD_PORTD (u8)3
+
+
+#define LMD_COLUMN_COMMON_CATHOD       (u8)0
+#define	LMD_COLUMN_COMMON_ANODE        (u8)1
+#define LMD_ROW_COMMON_CATHOD          (u8)2
+#define	LMD_ROW_COMMON_ANODE           (u8)3
+
+
+#endif /* LMD_PRIVATE_H_ */

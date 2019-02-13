@@ -1,0 +1,19 @@
+/*
+ * LMD_interface.h
+ *
+ *  Created on: Feb 11, 2019
+ *      Author: Killua
+ */
+
+#ifndef LMD_INTERFACE_H_
+#define LMD_INTERFACE_H_
+
+
+u8 LMD_u8Display( u8 * Copy_pu8Image, u8 Copy_u8Color);
+
+
+
+
+
+
+#endif /* LMD_INTERFACE_H_ */

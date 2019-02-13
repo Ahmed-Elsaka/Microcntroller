@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;DIO_DRIVER/ATMEGA32_REGISTERES.h&apos; to &apos;DIO_private.h&apos;" description="Rename resource &apos;ATMEGA32_REGISTERES.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ATMEGA32_REGISTERES.h" name="DIO_private.h" stamp="1548958655378" updateReferences="true"/>&#x0A;&#x0A;<refactoring comment="Rename resource &apos;DIO_DRIVER/ATMEGA_CONFIGS.h&apos; to &apos;BIT_CALC.h&apos;" description="Rename resource &apos;ATMEGA_CONFIGS.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ATMEGA_CONFIGS.h" name="BIT_CALC.h" stamp="1548958814384" updateReferences="true"/>
+</session>

@@ -1,0 +1,20 @@
+20:00:12 **** Incremental Build of configuration Debug for project Dancing_Leds ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Dancing_Leds.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5188 bytes (15.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:00:13 Build Finished (took 594ms)
+

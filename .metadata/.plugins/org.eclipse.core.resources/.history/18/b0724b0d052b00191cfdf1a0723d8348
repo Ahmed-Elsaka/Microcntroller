@@ -1,0 +1,15 @@
+/*
+ * SWI_prog.c
+ *
+ *  Created on: Feb 7, 2019
+ *      Author: Killua
+ */
+#include "STD_TYPES.h"
+#include "BIT_CALC.h"
+#include "DIO_interface.h"
+#include "SWI_interface.h"
+#include "SWI_private.h"
+#include "SWI_config.h"
+u8 SWI_u8GetSwitchState(u8 * Copy_pu8SwitchState){
+
+}

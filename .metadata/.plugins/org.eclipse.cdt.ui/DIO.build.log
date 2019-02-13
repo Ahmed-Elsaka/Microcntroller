@@ -1,0 +1,33 @@
+22:42:58 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+In file included from ../DIO_prog.c:10:
+../DIO_interface.h:50:13: warning: ISO C99 requires whitespace after the macro name
+In file included from ../DIO_prog.c:11:
+../ATMEGA_CONFIGS.h:13:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../DIO_prog.c:12:
+../ATMEGA32_REGISTERES.h:23:1: warning: "DDRD" redefined
+In file included from ../DIO_prog.c:10:
+../DIO_interface.h:50:1: warning: this is the location of the previous definition
+In file included from ../DIO_prog.c:12:
+../ATMEGA32_REGISTERES.h:25:1: warning: "PIND" redefined
+../ATMEGA32_REGISTERES.h:21:1: warning: this is the location of the previous definition
+../DIO_prog.c: In function 'DIO_s8SetPinDirection':
+../DIO_prog.c:36: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c:40: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c:44: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c:48: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c: In function 'DIO_s8SetPinValue':
+../DIO_prog.c:76: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c:80: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c:84: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c:88: error: invalid operands to binary & (have 'union Register *' and 'int')
+../DIO_prog.c: At top level:
+../DIO_prog.c:97: error: expected ')' before 'u8'
+make: *** [DIO_prog.o] Error 1
+
+22:42:59 Build Finished (took 753ms)
+

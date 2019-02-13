@@ -1,0 +1,101 @@
+/*
+ * LMD_prog.c
+ *
+ *  Created on: Feb 11, 2019
+ *      Author: Killua
+ */
+
+#include "STD_TYPES.h"
+#include "BIT_CALC.h"
+#include "DIO_interface.h"
+#include "LMD_config.h"
+#include "LMD_private.h"
+#include <util/delay.h>
+
+ 
+
+u8 LMD_u8Display( u8 * Copy_pu8Image, u8 Copy_u8Color){
+
+
+	u8 Local_LoopCounter = LOOP_START_INDEX;
+	switch(LMD_TYPE){
+		case LMD_COLUMN_COMMON_CATHOD:
+			DIO_u8SetPortnValue(3,0);
+			DIO_u8SetPortnValue(0,0xFF);
+			return 0 ;
+				switch (Copy_u8Color){
+					case LMD_RED :
+
+							for (Local_LoopCounter = LOOP_START_INDEX; Local_LoopCounter < LMD_WIDTH ; Local_LoopCounter++){
+								DIO_u8SetPortnValue(LMD_ACTIVE_PORT, Copy_pu8Image[Local_LoopCounter]);
+								DIO_u8SetPortnValue(LMD_RED_PORT, LMD_ONE<<Local_LoopCounter);
+								_delay_ms(2);
+							}
+						break;
+					case LMD_GREEN:
+						DIO_u8SetPortnValue(LMD_ACTIVE_PORT, 0xFF);
+						for (Local_LoopCounter = LOOP_START_INDEX; Local_LoopCounter < LMD_WIDTH ; Local_LoopCounter++){
+							DIO_u8SetPortnValue(LMD_YELLOW_PORT, LMD_ONE<<Local_LoopCounter);
+							_delay_ms(2);
+						}
+						break;
+				}
+
+
+		break;
+		case LMD_COLUMN_COMMON_ANODE:
+				switch (Copy_u8Color){
+
+					case LMD_RED :
+
+
+						break;
+					case LMD_GREEN:
+
+
+
+						break;
+				}
+
+
+		break;
+		case LMD_ROW_COMMON_CATHOD :
+				switch (Copy_u8Color){
+
+					case LMD_RED :
+
+
+						break;
+					case LMD_GREEN:
+
+
+
+						break;
+				}
+
+
+
+		break; 	
+		case LMD_ROW_COMMON_ANODE :
+				switch (Copy_u8Color){
+
+					case LMD_RED :
+
+
+						break;
+					case LMD_GREEN:
+
+
+
+						break;
+				}
+
+		break;   
+	}
+
+
+}
+
+
+
+
